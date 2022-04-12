@@ -1,0 +1,88 @@
+<html>
+<!DOCTYPE html>
+<head>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <link rel="shortcut icon" href="/cosas/uno.jpg" type="image/x-icon">
+   <link rel="stylesheet" href="/css/estilos.css">
+   <title>golfersite</title>
+   <style>
+       .flex-container{
+           display: flex;
+           background-color: bisque;
+
+       }
+       .flex-container div{
+           background-color: brown;
+           margin: 5px;
+           color: azure;
+           flex-basis: 100px;
+       }
+       @media (max-width: 600px){
+           .flex-container{
+               flex-direction: row;
+           }
+           .flex-container div{
+               flex-basis: 100px;
+           }
+       }
+   </style>
+</head>
+ <body>
+     <h1>Consultanos tus dudas</h1>
+     <form action="procesar.php" method="">
+         <div>
+             <label for="nombre">nombre:</label>
+             <input type="text" name="nombre" placeholder="ingresatunombre">
+         </div>
+         <div>
+             <label for="apellido">apellido:</label>
+             <input type="text" name="apellido" placeholder="ingresatuapellido">
+         </div>
+         <div>
+             <div>hombre</div>
+             <input type="radio" name="hola" value="hombre" />
+             <div>mujer</div>
+             <input type="radio" name="hola" value="mujer" />
+ 
+         </div>
+     </form>
+  
+     <a href="contacto.html">contacto</a>
+ 
+     <h1>mira la ubicacion de nuestra sede!</h1>
+     <a href="">ver mapa</a>
+ 
+     <a href="#index">volver a home</a>
+
+     <h2>Campeonatos</h2>
+
+     <div id="grilla">
+
+     </div>
+
+     <div class="grid-container2">
+         <p> Campeonatos Nacionales</p>
+         <div class="item 6"> Campeonato de Aficionados de Rosario</div>
+         <div class="item 7"> 100th AAG Cup</div>
+         <div class="item 8">Salta Match Play</div>
+         <p>Torneos Internacionales</p>
+         <div class="item 9"> Punta Cana Open</div>
+         <div class="item 10">St Andrews Championship</div>
+     </div>
+
+<h3>Se parte de nuestra comunidad!</h3>
+<p>Aqui te mostramos algunos requisitos para trabajr en golfersite</p>
+     <div class="flex-container">
+        <div style="flex-grow: 6;">1. Tener conocimientos avanzados en las habilidades del golf</div>
+        <div style="flex-grow: 4;">2. Nivel de Ingles C2 </div>
+        <div>3. Edad minima de 25 años</div>
+        <div>4. Experiencia previa</div>
+    </div>
+ 
+    
+ 
+ 
+ 
+ 
+</body>
+</html>
